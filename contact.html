@@ -7,32 +7,70 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Spot The Signs</li>
-        <li>Get Involved</li>
-        <li>Contact Us</li>
-      </ul>
-    </nav>
+ <nav>Nav bar here</nav>
     <div>
       <h2>Contact Us</h2>
-      <form>
+      <form id="">
         <fieldset>
-          <label for="name"> Your Name</label>
-          <input type="text" id="name" placeholder="Your Name" name="name" />
+          <label for="Fname"> First Name</label>
+          <input type="text" id="Fname" placeholder="First Name" name="Fname" />
+          <label for="Lname"> Last Name</label>
+          <input type="text" id="Lname" placeholder="Last Name" name="Lname" />
           <label for="email"> Your Email</label>
           <input type="text" id="email" placeholder="your@email.com" />
           <label for="phone_number"> Phone Number</label>
           <input type="text" id="number" placeholder="000-000-0000" />
-          <label for="text" id="comments" placeholder="Your Comments"
-            >Your Comments</label
-          >
-          <textarea type="text" id="comments"></textarea>
-          <button>Submit</button>
+          </fieldset>
+          </form>
+          <form>
+            <p><strong>How may we help you?</strong></p>
+
+            <label>
+              <input type="radio" name="help" value="housing_assistance" />
+              I need help finding stable or affordable housing </label
+            >
+
+            <label>
+              <input type="radio" name="help" value="emergency_shelter" />
+              I need emergency shelter or temporary housing </label
+            >
+
+            <label>
+              <input type="radio" name="help" value="financial_support" />
+              I need help with rent, utilities, or basic needs </label
+            >
+
+            <label>
+              <input type="radio" name="help" value="counseling" />
+              I’d like to speak with someone for support or guidance </label
+            >
+
+            <label>
+              <input type="radio" name="help" value="volunteer" />
+              I’d like to volunteer or get involved </label
+            >
+
+            <label>
+              <input type="radio" name="help" value="donate" />
+              I’d like to make a donation or sponsor a program </label
+            >
+
+            <label>
+              <input type="radio" name="help" value="other" />
+              Other (Please Specify) </label
+            >
+
+            <textarea
+              name="Comments"
+    
+            ></textarea
+            >
+
+            <input type="submit" value="Submit" />
+          </form>
         </fieldset>
       </form>
     </div>
+    <footer>Footer Here</footer>
   </body>
 </html>
