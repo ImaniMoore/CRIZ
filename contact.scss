@@ -1,7 +1,24 @@
 //Assign a varaible
-$primary-color: black;
-$secondary-color: white;
-$blue-color: RGB(0, 255, 255);
+$primary-color: #04b2e2;
+$secondary-color: #ffee8c;
+$btn-text-color: #fff;
+$border-color: rgb(166, 165, 165);
 $small-space: 15px;
 $medium-space: 25px;
 $large-space: 35px;
+$small-font: 20px;
+$medium-font: 30px;
+$large-font: 40px;
+$radius: 80%;
+$small-padding: 10px;
+$medium-padding: 20px;
+
+.container {
+  border-color: $border-color;
+  border-radius: $radius;
+}
+p,
+h2 {
+  color: $primary-color;
+  font-size: $large-font;
+}

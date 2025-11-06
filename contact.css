@@ -1,1 +1,10 @@
-/*# sourceMappingURL=contact.css.map */
+.container {
+  border-color: rgb(166, 165, 165);
+  border-radius: 80%;
+}
+
+p,
+h2 {
+  color: #04b2e2;
+  font-size: 40px;
+}/*# sourceMappingURL=contact.css.map */
