@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="donate.css">
+  <title>Get Involved</title>
+</head>
+<body>
+  <header>
+    <nav>
+      Nav Bar content here...
+    </nav>
+  </header>
+
+  <main>
+    <section class="donation-sec">
+      <h1 class="donation-title">Donate Now</h1>
+      <h3 class="donation-subtitle">We need your donations</h3>
+      <p class="donation-info">
+        Without your help we cannot end housing insecurity.
+        Each donation, big or small, helps someone take a vital step forwards.
+        Thank you for choosing to donate today.
+      </p>
+      <form class="donation-form" method="post">
+        <div class="donation-form__type-btn">
+          <button class="donate-btn donation-freq donate-btn--selected" type="button">Give Once</button>
+          <button class="donate-btn donation-freq" type="button">Give Recurring</button>
+        </div>
+
+        <label class="donation-form__label donation-form__label--required">Donation Amount</label>
+        <input type="number" name="amount" id="amount" pattern="^\d+([,\.]\d+)?$" placeholder="$25.00" autofocus required>
+        
+        <label class="donation-form__label donation-form__label--required">Name</label>
+        <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+        
+        <label class="donation-form__label donation-form__label--required">Email</label>
+        <input type="email" name="email" id="email" placeholder="example@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Please input a valid email address. Example: name@email.com" required>
+
+        <label class="donation-form__label donation-form__label--required">Address</label>
+        <input type="text" name="address-line-1" id="address-line-1" placeholder="Street Address" required>
+        <input type="text" name="address-line-2" id="address-line-2" placeholder="Apartment or suite number (optional)">
+        <input type="text" name="city" id="city" placeholder="City" required>
+        <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code" required>
+
+        <label class="donation-form__label donation-form__label--required">Phone</label>
+        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" required>
+
+        <button class="donate-btn donation-form__submit-btn" id="donation-form__submit-btn" type="input">Make a secure donation</button>
+      </form>
+    </section>
+    
+    <section class="get-involved">
+      <h1 class="get-involved__title">Get Involved</h1>
+      <img src="../assets/family.jpg"/>
+      <p class="get-involved__info">
+        At JIRCZ, volunteers are the heart of everything we do. 
+        Every day, their generosity helps provide food, clothing, 
+        essential supplies, and a sense of belonging to neighbors experiencing 
+        housing insecurity. By volunteering with us, you’re not just lending a 
+        hand, you’re offering hope and helping to build a community rooted in 
+        compassion, dignity, and respect. Join us in making a lasting impact.
+      </p>
+
+      <h3 class="get-involved__subtitle">Want to ask a question?</h3>
+      <p class="get-involved__sub-info">Complete our contact form.</p>
+      <a class="get-involved__con-btn">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Footer content here...</p>
+  </footer>
+
+  <script src="donate.js"></script>
+</body>
+</html>

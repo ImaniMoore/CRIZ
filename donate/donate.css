@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-size: 1rem;
+}
+
+header,
+footer {
+  background-color: #04b2e2;
+  height: 80px;
+}
+
+.donation-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.donation-sec .donation-title,
+.donation-sec .donation-subtitle {
+  color: #04b2e2;
+  margin: 5px;
+}
+.donation-sec .donation-title {
+  font-size: 3rem;
+}
+.donation-sec .donation-subtitle {
+  text-transform: uppercase;
+}
+.donation-sec .donation-info {
+  line-height: 1.5;
+  max-width: 400px;
+  margin: 20px;
+}
+
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.donation-form__type-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 0 10px 0;
+}
+.donation-form .donate-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 20px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 170px;
+}
+.donation-form .donate-btn--selected {
+  background-color: #04b2e2;
+}
+.donation-form__label {
+  margin-top: 8px;
+  font-weight: 550;
+}
+.donation-form__label--required:after {
+  content: " *";
+  color: red;
+}
+.donation-form input {
+  border: 1px solid rgb(166, 165, 165);
+  border-radius: 10px;
+  height: 44px;
+  padding: 0 10px;
+  margin: 8px 0;
+}
+.donation-form #donation-form__submit-btn {
+  background-color: #04b2e2;
+  font-size: 1.25rem;
+  margin: 16px 0;
+  width: 100%;
+}
+
+.get-involved {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get-involved__title {
+  font-size: 3rem;
+  margin: 40px 0 0 0;
+}
+.get-involved__info {
+  margin: 15px;
+}
+.get-involved__subtitle, .get-involved__sub-info {
+  margin: 10px;
+}
+.get-involved__sub-info {
+  margin-top: 0;
+}
+.get-involved__con-btn {
+  background-color: #04b2e2;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  width: 170px;
+}
+.get-involved img {
+  border-radius: 20px;
+  width: 90%;
+  height: auto;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .donation-sec {
+    width: 50%;
+  }
+  .get-involved {
+    width: 50%;
+  }
+  .get-involved__info {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .get-involved__info {
+    max-width: 700px;
+  }
+  .get-involved img {
+    height: 900px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=donate.css.map */
