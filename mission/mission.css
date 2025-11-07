@@ -5,7 +5,7 @@ body {
 
 header,
 footer {
-  background-color: #04b2e2;
+  background-color: #04B2E2;
   height: 80px;
 }
 
@@ -15,13 +15,51 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+.mission-sec__title {
+  color: #04B2E2;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 20px 0 0;
+}
+.mission-sec__subtitle {
+  color: #003260;
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+.mission-sec__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 .mission-sec__info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  height: 400px;
+}
+.mission-sec__info--color-block {
+  background-color: #FFA69E;
 }
 .mission-sec__info h2 {
+  text-transform: uppercase;
   margin-bottom: 0;
+  font-size: 2rem;
+}
+.mission-sec__info p {
+  font-size: 1.25rem;
+}
+.mission-sec__info h2, .mission-sec__info p {
+  padding: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .mission-sec__info {
+    display: flex;
+    align-items: flex-start;
+  }
+  .mission-sec__info--color-block {
+    align-items: flex-end;
+  }
 }/*# sourceMappingURL=mission.css.map */

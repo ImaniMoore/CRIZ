@@ -1,6 +1,7 @@
 // Variables
-$primary-color: #04b2e2;
-$secondary-color: #ffee8c;
+$primary-color: #04B2E2;
+$secondary-color: #003260;
+$accent-color: #FFA69E;
 $btn-text-color: #fff;
 $border-color: rgb(166, 165, 165);
 
@@ -33,13 +34,75 @@ footer {
   @include center-items();
   flex-direction: column;
 
+  &__title {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 20px 0 0;
+  }
+
+  &__subtitle {
+    color: $secondary-color;
+    margin: 0 0 10px;
+    font-size: 2rem;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    // height: 60vh;
+    // padding: 10px 0;
+  }
+
   &__info {
     @include center-items();
     flex-direction: column;
     padding: 20px;
+    height: 400px;
+
+    // &--img {
+    //   width: 50%;
+    //   height: auto;
+    //   // height: 100px;
+    //   // width: auto;
+    // }
+
+    &--color-block {
+      background-color: $accent-color;
+      // background-color: $secondary-color;
+      // color: $btn-text-color;
+
+      // h2 {
+      //   padding-right: 50px;
+      // }
+    }
 
     h2 {
+      text-transform: uppercase;
       margin-bottom: 0;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    h2, p {
+      padding: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .mission-sec {
+
+    &__info {
+      display: flex;
+      align-items: flex-start;
+
+      &--color-block {
+        align-items: flex-end;
+      }
     }
   }
 }
