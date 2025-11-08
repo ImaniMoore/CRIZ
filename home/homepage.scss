@@ -14,63 +14,44 @@ $border-color: rgb(166, 165, 165);
 
 body {margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom, $white, $light-blue, $pink);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     color: $dark-blue;
     font-family: $font2;}
 
 
-.image-one {max-width: 100%;
+.house {max-width: 100%;
     max-height: 40%;}
 
-.logo {max-width: 50%;
-    display: block;
-    margin: auto;}
 
-header {
-    font-size: 1.5rem;
-    font-family: $font1;
-    text-align: center;
+header {text-align: center;
     text-transform: uppercase;
-    margin: 0%;}
+    margin: 0%;
+    color: $white;
+    background-color: $dark-blue;}
 
-.mission {
-    margin: 1rem;
-h1 {font-family: $font1}}
+.mission {}
 
 .pages {
-    color: $dark-blue;
-    font-family: $font1}
+    background-color: $light-blue;
+}
 
-form {
-    background-color: $pink;
+
+form {background-color: $dark-blue;
     text-align: center;
-    padding: 1em;
-button{ color: $btn-text-color;
-    background-color: $yellow;
-}}
+    color: $white;
+    padding: 2em;}
 
 
 // MEDIA QUERIES
 //phone
 @media screen and (max-width: 320px){
-    header {font-size: 2rem;
-            text-align: center;}
-
-    .logo {max-width: 50%;}
-
-    .mission {font-size: 1em;
-        padding: 0.5em;
-        max-width: 90%;}
-    .pages {font-size: 0.9em;
-        text-align: center;}}
+    body{display: flex;
+        flex-direction: column;
+        text-align: center;}
+    header{font-size: 2.1rem;}
+}
 
 //tablet
-@media screen and (min-width: 321px) and (max-width: 768px){
-}
+@media screen and (min-width: 321px) and (max-width: 768px){}
 
 //desktop
-@media screen and (min-width: 769px){
-}
+@media screen and (min-width: 769px){}
