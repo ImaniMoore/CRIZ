@@ -1,0 +1,128 @@
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Playfair Display", sans-serif;
+}
+
+header,
+footer {
+  background-color: #04B2E2;
+  height: 80px;
+}
+
+.mission-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mission-sec__title {
+  color: #04B2E2;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 20px 0 0;
+}
+.mission-sec__subtitle {
+  color: #003260;
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+.mission-sec__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.mission-sec__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 400px;
+}
+.mission-sec__info--color-block {
+  background-color: #FFA69E;
+}
+.mission-sec__info h2 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+.mission-sec__info p {
+  font-size: 1.5rem;
+}
+.mission-sec__info h2, .mission-sec__info p {
+  padding: 20px;
+}
+
+.mission-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mission-block__img {
+  border-radius: 10px;
+  height: 200px;
+  width: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mission-sec__info--block {
+    animation: slide-in-left linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 40%;
+  }
+  .mission-sec__info--color-block {
+    animation: slide-in-right linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 40%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .mission-sec__img {
+    max-height: 400px;
+  }
+  #last-mission-block {
+    animation-range-end: 30%;
+  }
+  .mission-block__img {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mission-sec__img {
+    -o-object-position: 50% 75%;
+       object-position: 50% 75%;
+  }
+  .mission-sec__info--row {
+    flex-direction: row;
+  }
+  .mission-sec__info--row p {
+    margin: 0 10px;
+  }
+  .mission-sec__info p {
+    width: 60%;
+  }
+}/*# sourceMappingURL=mission.css.map */

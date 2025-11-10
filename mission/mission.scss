@@ -1,0 +1,154 @@
+$primary-color: #04B2E2;
+$secondary-color: #003260;
+$accent-color: #FFA69E;
+$btn-text-color: #fff;
+$border-color: rgb(166, 165, 165);
+
+@mixin center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Playfair Display", sans-serif;
+}
+
+header,
+footer {
+  background-color: $primary-color;
+  height: 80px;
+}
+
+.mission-sec {
+  @include center-items();
+  flex-direction: column;
+
+  &__title {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 20px 0 0;
+  }
+
+  &__subtitle {
+    color: $secondary-color;
+    margin: 0 0 10px;
+    font-size: 2rem;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__info {
+    @include center-items();
+    flex-direction: column;
+    padding: 20px;
+    min-height: 400px;
+
+    &--color-block {
+      background-color: $accent-color;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    h2, p {
+      padding: 20px;
+    }
+  }
+}
+
+.mission-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__img {
+    border-radius: 10px;
+    height: 200px;
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mission-sec__info--block {
+    animation: slide-in-left linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 40%;
+  }
+
+  .mission-sec__info--color-block {
+    animation: slide-in-right linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 40%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .mission-sec__img {
+    max-height: 400px;
+  }
+  #last-mission-block {
+    animation-range-end: 30%;
+  }
+
+  .mission-block__img {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mission-sec {
+    &__img {
+      object-position: 50% 75%;
+    }
+
+    &__info--row {
+      flex-direction: row;
+    }
+
+    &__info--row p {
+      margin: 0 10px;
+    }
+
+    &__info p {
+      width: 60%;
+    }
+  }
+}
