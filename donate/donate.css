@@ -140,10 +140,12 @@ footer {
 }
 .reach-out__con-btn {
   background-color: #04B2E2;
+  color: black;
   border-radius: 10px;
   padding: 10px;
   font-weight: 600;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   width: 170px;
   cursor: pointer;
