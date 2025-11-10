@@ -4,6 +4,8 @@ This website was created as part of a class project to represent a fictional non
 
 Note: This organization and website are entirely fictional and created for educational purposes only.
 
+<img src="assets/home-page.png" height="500px"/>
+
 ## Description
 
 The site includes five main pages — Home, About, Mission, Get Involved, and Contact — each designed to reflect how a real-world non-profit might share its story, engage supporters, and encourage community involvement.
