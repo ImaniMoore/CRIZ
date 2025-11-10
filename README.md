@@ -5,6 +5,7 @@ This website was created as part of a class project to represent a fictional non
 Note: This organization and website are entirely fictional and created for educational purposes only.
 
 <img src="assets/home-page.png" height="500px"/>
+<img src="assets/nav-bar.png" height="500px"/>
 
 ## Description
 
