@@ -12,7 +12,27 @@
 <body>
   <header>
     <nav>
-      Nav Bar content here...
+      <div class="logo">
+        <img src="logo.jpg">
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">☰</label>
+      <ul class="links">
+        <li><a href="../home/homepage.html">Home</a></li>
+        <li><a href="../mission/mission.html">Our Mission</a></li>
+        <li><a href="../AboutUs/About.html">Meet the Team</a></li>
+        <li><a href="../Contact/contact.html">Contact Us</a></li>
+        <li><a href="../donate/donate.html" class="btn">Donate</a></li>
+      </ul>
+      <div class="curtain" id="mobileCurtain">
+        <nav class="curtain-menu">
+          <a href="../home/homepage.html">Home</a>
+          <a href="../mission/mission.html">Our Mission</a>
+          <a href="../AboutUs/About.html">Meet the Team</a>
+          <a href="../Contact/contact.html">Contact Us</a>
+          <a href="../donate/donate.html">Donate</a>
+        </nav>
+      </div>
     </nav>
   </header>
 
@@ -79,8 +99,7 @@
     <section class="reach-out">
       <h3 class="reach-out__title">Want to ask a question?</h3>
       <p class="reach-out__sub-info">Complete our contact form.</p>
-      <!-- UPDATE A TAG WITH HREF -->
-      <a class="reach-out__con-btn">Contact Us</a>
+      <a class="reach-out__con-btn" href="../Contact/contact.html">Contact Us</a>
     </section>
   </main>
 

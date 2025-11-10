@@ -30,6 +30,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #04B2E2;
+  z-index: 1;
 }
 
 .logo img {
@@ -108,21 +109,18 @@ nav {
     animation: slide-in-left linear;
     animation-timeline: view();
     animation-range-start: cover;
-    animation-range-end: 40%;
+    animation-range-end: 30%;
   }
   .mission-sec__info--color-block {
     animation: slide-in-right linear;
     animation-timeline: view();
     animation-range-start: cover;
-    animation-range-end: 40%;
+    animation-range-end: 30%;
   }
 }
 @media screen and (min-width: 700px) {
   .mission-sec__img {
     max-height: 400px;
-  }
-  #last-mission-block {
-    animation-range-end: 30%;
   }
   .mission-block__img {
     height: 300px;
@@ -130,10 +128,13 @@ nav {
 }
 @media screen and (min-width: 1024px) {
   #second-mission-block {
-    animation-range-end: 30%;
+    animation-range-end: 10%;
   }
 }
 @media screen and (min-width: 1200px) {
+  #second-mission-block {
+    animation-range-end: 30%;
+  }
   .mission-sec__img {
     -o-object-position: 50% 75%;
        object-position: 50% 75%;
