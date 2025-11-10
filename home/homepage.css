@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #003260;
+  font-family: "DM Serif Display", serif;
+}
+
+header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #003260;
+  background-color: #04b2e2;
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.house-container {
+  position: relative;
+  text-align: center;
+  max-width: 90%;
+  margin: 25px auto;
+}
+.house-container .house-img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+.house-container .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.house-container .donate-here {
+  background-color: #ffa69e;
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mission {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+.mission .mission-btn {
+  border: 1px solid #ffa69e;
+  background-color: #ffa69e;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #003260;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bottom-images {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 20px 0;
+}
+.bottom-images .image-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.bottom-images .image-item img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  margin: 5px 5px 5px 10px;
+}
+.bottom-images .image-item .desc {
+  font-family: "Playfair Display", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #003260;
+  max-width: 300px;
+}
+
+.info-title {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  height: auto;
+}
+
+.newsletter form {
+  background-color: #04b2e2;
+  text-align: center;
+  color: #003260;
+  padding: 2em;
+}
+.newsletter form input {
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 20ch;
+  border: none;
+}
+.newsletter form button {
+  margin-left: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffa69e;
+  color: #003260;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .donate-here {
+    font-size: 2rem;
+    opacity: 95%;
+  }
+  .mission {
+    font-size: 1.5rem;
+  }
+  .bottom-images .image-item img {
+    max-width: 50%;
+    height: auto;
+    margin: 20px 5px 0 30px;
+  }
+}
+.desc {
+  font-size: 1.5rem;
+}
+
+.info-title {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 769px) {
+  .mission {
+    font-size: 5rem;
+  }
+  .bottom-images .image-item img {
+    max-width: 50%;
+    height: auto;
+  }
+  .logo {
+    width: 150px;
+  }
+}

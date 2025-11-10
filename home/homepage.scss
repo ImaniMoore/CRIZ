@@ -1,0 +1,161 @@
+// VARIABLES
+$white: #ffffff;
+$light-blue: #04b2e2;
+$dark-blue: #003260;
+$pink: #ffa69e;
+$black: #000000;
+$font1: "DM Serif Display", serif;
+$font2: "Playfair Display", sans-serif;
+
+// BASE STYLES
+body {
+  margin: 0;
+  padding: 0;
+  color: $dark-blue;
+  font-family: $font1;}
+
+header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: $dark-blue;
+  background-color: $light-blue;
+
+  h1 {
+    margin: 0;
+    padding: 0;}}
+
+// HOUSE SECTION
+.house-container {
+  position: relative;
+  text-align: center;
+  max-width: 90%;
+  margin: 25px auto;
+
+  .house-img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;}
+
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: $white;
+    text-transform: uppercase;}
+
+  .donate-here {
+    background-color: $pink;
+    color: $white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;}}
+
+// MISSION
+.mission {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+
+  .mission-btn {
+    border: 1px solid $pink;
+    background-color: $pink;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: $dark-blue;
+    text-decoration: none;
+    font-weight: bold;}}
+
+// BOTTOM IMAGES
+.bottom-images {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 20px 0;
+
+  .image-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 100%; 
+      max-width: 200px;
+      border-radius: 10px;
+      margin: 5px 5px 5px 10px;}
+
+    .desc {
+      font-family: $font2;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $dark-blue;
+      max-width: 300px;}}}
+
+//INFO SECTION
+.info-title {
+  margin-left: 10px;
+  text-decoration: none;}
+
+// LOGO 
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 50%;  
+  height: auto;}
+
+// NEWSLETTER FORM
+.newsletter {
+  form {
+    background-color: $light-blue;
+    text-align: center;
+    color: $dark-blue;
+    padding: 2em;
+
+    input {
+      border-radius: 10px;
+      padding: 0.5rem;
+      width: 20ch;
+      border: none;}
+
+    button {
+      margin-left: 10px;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 10px;
+      background-color: $pink;
+      color: $dark-blue;
+      cursor: pointer;}}}
+
+// MEDIA QUERIES
+//TABLET
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  h1 {font-size: 3.5rem;}
+  .donate-here {font-size: 2rem;
+    opacity: 95%;}
+  .mission {font-size: 1.5rem;}
+
+  .bottom-images .image-item img {
+    max-width: 50%;
+    height: auto;
+    margin: 20px 5px 0 30px;}}
+  .desc {font-size: 1.5rem;}
+  .info-title {font-size: 2rem;}
+
+
+//DESKTOP
+@media screen and (min-width: 769px) {
+  .mission {font-size: 5rem;}
+
+  .bottom-images .image-item img {
+    max-width: 50%;
+    height: auto;}
+  
+  .logo {
+    width: 150px;}}
