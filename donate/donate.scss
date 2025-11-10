@@ -9,7 +9,13 @@ body {
   font-size: 1rem;
 }
 
-header,
+header {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  background-color: $primary-color;
+}
+
 footer {
   background-color: $primary-color;
   height: 80px;
