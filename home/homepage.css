@@ -16,7 +16,6 @@ header {
   height: 100px;
   position: sticky;
   top: 0;
-  font-size: 1.2rem;
   background-color: #04b2e2;
   z-index: 1;
 }
@@ -26,6 +25,7 @@ header {
   width: auto;
   border-radius: 50%;
   margin: 5px;
+  font-size: 1.2rem;
 }
 
 nav {
@@ -181,7 +181,7 @@ nav {
   .newsletter {
     font-size: 2rem;
   }
-}/*# sourceMappingURL=homepage.css.map */
+}
 /*small screens*/
 @media screen and (max-width: 699px) {
   .curtain {
