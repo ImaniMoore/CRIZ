@@ -5,16 +5,10 @@ body {
   font-family: "DM Serif Display", serif;
 }
 
-header {
+main > h1 {
   text-align: center;
-  margin: 0;
-  padding: 0;
-  color: #003260;
   background-color: #04b2e2;
-}
-header h1 {
   margin: 0;
-  padding: 0;
 }
 
 /*--- Navigation Bar ---*/
@@ -23,9 +17,10 @@ header {
   position: sticky;
   top: 0;
   background-color: #04b2e2;
+  z-index: 1;
 }
 
-.logo img {
+.header-logo img {
   height: 90px;
   width: auto;
   border-radius: 50%;
@@ -243,7 +238,7 @@ nav {
     align-items: flex-start;
     position: relative;
   }
-  .logo img {
+  .header-logo img {
     height: 85px;
     width: auto;
     border-radius: 50%;
