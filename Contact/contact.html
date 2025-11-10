@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="logo.jpg" />
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul class="links">
+          <li><a href="../home/homepage.html">Home</a></li>
+          <li><a href="../mission/mission.html">Our Mission</a></li>
+          <li><a href="../AboutUs/About.html">Meet the Team</a></li>
+          <li><a href="../Contact/contact.html">Contact Us</a></li>
+          <li><a href="../donate/donate.html" class="btn">Donate</a></li>
+        </ul>
+        <div class="curtain" id="mobileCurtain">
+          <nav class="curtain-menu">
+            <a href="../home/homepage.html">Home</a>
+            <a href="../mission/mission.html">Our Mission</a>
+            <a href="../AboutUs/About.html">Meet the Team</a>
+            <a href="../Contact/contact.html">Contact Us</a>
+            <a href="../donate/donate.html">Donate</a>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <div>
+      <h2 class="contact-title">Contact Us</h2>
+      <form
+        name="myForm"
+        class="contact-form"
+        id="contact-form"
+        action=""
+        method="POST"
+      >
+        <label class="required-label" for="name"> First Name</label>
+        <input type="text" id="name" placeholder="First Name" name="Fname" />
+        <label class="required-label" for="name"> Last Name</label>
+        <input type="text" id="name" placeholder="Last Name" name="Lname" />
+        <label class="required-label" for="email"> Your Email</label>
+        <input
+          type="text"
+          id="email"
+          placeholder="your@email.com"
+          name="email"
+        />
+        <label class="required-label" for="phone" name="phone">
+          Phone Number</label
+        >
+        <input
+          type="text"
+          id="number"
+          name="phone"
+          placeholder="0000000000"
+          pattern="[0-9]{10}"
+        />
+        <p class="options"><strong>How may we help you?</strong></p>
+
+        <label class="required-label">
+          <input type="radio" name="help" value="housing_assistance" />
+          I need help finding stable or affordable housing
+        </label>
+
+        <label class="required-label">
+          <input type="radio" name="help" value="emergency_shelter" />
+          I need emergency shelter or temporary housing
+        </label>
+
+        <label class="required-label">
+          <input type="radio" name="help" value="financial_support" />
+          I need help with rent, utilities, or basic needs
+        </label>
+
+        <label class="required-label">
+          <input type="radio" name="help" value="counseling" />
+          I’d like to speak with someone for support or guidance
+        </label>
+
+        <label class="required-label">
+          <input type="radio" name="help" value="volunteer" />
+          I’d like to volunteer or get involved
+        </label>
+
+        <label class="required-label">
+          <input type="radio" name="help" value="donate" />
+          I’d like to make a donation or sponsor a program
+        </label>
+
+        <label class="required-label">
+          <input type="radio" name="help" value="other" />
+          Other (Please Specify)
+        </label>
+
+        <textarea name="Comments"></textarea>
+
+        <input type="submit" value="Submit" id="submit-button" />
+      </form>
+    </div>
+    <footer>
+      <a><div>Conatct Us</div></a>
+      <a><div>FAQs</div></a>
+      <div>Privacy Policy</div>
+      <div>Terms of Use</div>
+      <div class="trademark">Copyright © 2025 CIRZ. All rights reserved.</div>
+      <div class="disclosure">
+        CIRZ is a student project for educational purposes and is not a
+        registered nonprofit organization.
+      </div>
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>
