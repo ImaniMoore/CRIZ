@@ -10,11 +10,8 @@ header {
   margin: 0;
   padding: 0;
   color: #003260;
+  font-size: 1.2rem;
   background-color: #04b2e2;
-}
-header h1 {
-  margin: 0;
-  padding: 0;
 }
 
 .house-container {
@@ -48,6 +45,7 @@ header h1 {
   border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
+  opacity: 95%;
 }
 
 .mission {
@@ -68,26 +66,32 @@ header h1 {
 .bottom-images {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin: 20px 0;
+  gap: 1rem;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .bottom-images .image-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 1rem;
 }
 .bottom-images .image-item img {
   width: 100%;
   max-width: 200px;
   border-radius: 10px;
-  margin: 5px 5px 5px 10px;
+  margin: 5px;
 }
 .bottom-images .image-item .desc {
   font-family: "Playfair Display", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
   color: #003260;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .info-title {
@@ -102,62 +106,57 @@ header h1 {
   height: auto;
 }
 
-.newsletter form {
-  background-color: #04b2e2;
-  text-align: center;
-  color: #003260;
-  padding: 2em;
-}
-.newsletter form input {
-  border-radius: 10px;
-  padding: 0.5rem;
-  width: 20ch;
-  border: none;
-}
-.newsletter form button {
-  margin-left: 10px;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 10px;
-  background-color: #ffa69e;
-  color: #003260;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 321px) and (max-width: 768px) {
-  h1 {
-    font-size: 3.5rem;
+  header h1 {
+    font-size: 2rem;
   }
   .donate-here {
     font-size: 2rem;
-    opacity: 95%;
   }
   .mission {
     font-size: 1.5rem;
   }
   .bottom-images .image-item img {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     margin: 20px 5px 0 30px;
   }
-}
-.desc {
-  font-size: 1.5rem;
-}
-
-.info-title {
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 769px) {
-  .mission {
-    font-size: 5rem;
+  .desc, .desc a {
+    font-size: 2rem;
   }
-  .bottom-images .image-item img {
+  .info-title {
+    font-size: 1.5rem;
+  }
+  .logo {
     max-width: 50%;
     height: auto;
   }
+}
+@media screen and (min-width: 769px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  .donate-here {
+    font-size: 2.5rem;
+  }
+  .mission {
+    font-size: 2rem;
+  }
+  .bottom-images .image-item img {
+    max-width: 70%;
+    height: auto;
+  }
+  .desc a {
+    font-size: 2rem;
+  }
+  .info-title {
+    font-size: 3rem;
+    margin-left: 20px;
+  }
   .logo {
-    width: 150px;
+    width: 200px;
+  }
+  .newsletter {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=homepage.css.map */
