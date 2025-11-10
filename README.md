@@ -21,8 +21,10 @@ The layout includes consistent header and footer components for easy navigation 
 ### Executing program
 
 ```
+# cd into the application directory
 cd CRIZ
 
+# run command to open home page of the application
 open home/home.html
 ```
 
