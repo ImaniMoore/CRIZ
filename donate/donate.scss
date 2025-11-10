@@ -17,7 +17,13 @@ body {
   font-family: "Playfair Display", sans-serif;
 }
 
-header,
+header {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  background-color: $primary-color;
+}
+
 footer {
   background-color: $primary-color;
   height: 80px;

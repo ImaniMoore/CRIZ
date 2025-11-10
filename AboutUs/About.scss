@@ -1,0 +1,240 @@
+$primary-color: #04b2e2;
+$secondary-color: #003260;
+$btn-text-color: #fff;
+$border-color: rgb(166, 165, 165);
+$accent-color: #FFA69E;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", sans-serif;
+}
+/*--- Navigation Bar ---*/
+header {
+    height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: $primary-color;
+}
+.logo img {
+    height: 90px;
+    width: auto;
+    border-radius: 50%;
+    margin: 5px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+/* --- About Us Section ---*/
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: $primary-color;
+    margin-top: 50px;
+}
+p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+}
+h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: $secondary-color;
+
+}
+.heading {
+    height: 300px;
+    background-image: url('headerbackground.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.heading, h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    top: 0;
+}
+#meettheteam {
+    color: $primary-color;
+
+}
+.abouttheteam {
+   margin: 30px;
+}
+
+.aboutusname {
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: baseline;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 30px;
+}
+
+.aboutusimg {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 5px;
+    border : 5px solid $border-color;
+}
+.aboutus p {
+    max-width: 300px;
+    margin: 10px auto;
+}
+/* --- Media Queries ---*/
+/*small screens*/
+@media screen and (max-width: 699px) {
+    .curtain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(4, 178, 226, 0.9);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: height 0.6s ease-in-out;
+        z-index: 5;
+    }
+    .curtain-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .curtain-menu a {
+        margin: 0px;
+        padding: 30px;
+        border-radius: 40px;
+    }
+    .curtain-menu a:active {
+        background-color: rgba(0, 50, 96, 0.9);
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .menu-toggle:checked ~ .curtain {
+        height: 100vh;
+    }
+    .menu-icon {
+        font-size: 50px;
+        display: block;
+        margin-right: 30px;
+        margin-top: -15px;
+        color: $secondary-color;
+   
+    }
+    nav .links {
+        display: none;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+    }
+}
+/* Tablets */
+@media screen and (min-width: 700px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+    }
+    .logo img {
+        height: 85px;
+        width: auto;
+        border-radius: 50%;
+        margin: 10px 10px;
+    }
+    input {
+        display: none;
+    }
+    label {
+        display: none;
+    }
+    .curtain {
+        display: none;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 40px 30px;
+        gap: 30px;
+    }
+    ul a {
+        text-decoration: none;
+        color: white;
+        margin: 0;
+        padding: 5px;
+        border-radius: 8px;
+    }
+    ul .btn {
+        background-color: $accent-color;
+        color: white;
+        padding: 15px 15px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    ul a:active {
+        color: $secondary-color;
+        background-color: white;
+    }
+    .aboutus {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+}
+/* Desktops */
+@media screen and (min-width: 1200px) {
+     ul a {
+        text-decoration: none;
+        color: white;
+    }
+    ul .btn {
+        background-color: $accent-color;
+        color: white;
+        padding: 15px 15px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    ul a:hover {
+        color: $secondary-color;
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    ul .btn:hover {
+        background-color: $secondary-color;
+        color: white;
+    }
+}
