@@ -4,27 +4,16 @@ body {
   font-family: "Playfair Display", sans-serif;
 }
 
-/*--- Navigation Bar ---*/
 header {
   height: 100px;
   position: sticky;
   top: 0;
-  background-color: #04b2e2;
+  background-color: #04B2E2;
 }
 
-.logo img {
-  height: 90px;
-  width: auto;
-  border-radius: 50%;
-  margin: 5px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 10;
+footer {
+  background-color: #04B2E2;
+  height: 80px;
 }
 
 .donation-sec {
