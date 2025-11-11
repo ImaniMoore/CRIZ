@@ -1,5 +1,5 @@
 function validateForm(e) {
-  event.preventDefault();
+  Event.preventDefault();
   let x = document.forms["myForm"]["Fname"].value;
   let y = document.forms["myForm"]["Lname"].value;
   let z = document.forms["myForm"]["email"].value;
